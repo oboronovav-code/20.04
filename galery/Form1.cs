@@ -44,7 +44,7 @@ namespace galery
             if (memePaths.Count > 0)
             {
                 // Завантажуємо зображення
-                pictureBoxMeme.Image = Image.FromFile(memePaths[currentIndex]);
+                pictureBox1.Image = Image.FromFile(memePaths[currentIndex]);
 
                 // Виводимо номер мему в заголовок (опціонально)
                 this.Text = $"Мем {currentIndex + 1} із {memePaths.Count}";
