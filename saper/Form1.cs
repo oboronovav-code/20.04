@@ -35,7 +35,7 @@ namespace saper
             if (clickedButton.Tag.ToString() == "mine")
             {
                 clickedButton.BackColor = Color.Red;
-                clickedButton.Text = "??";
+                clickedButton.Text = "";
                 MessageBox.Show("БАБАХ! Ви наступили на міну.");
                 Application.Restart(); 
             }
@@ -43,7 +43,7 @@ namespace saper
             {
                 clickedButton.BackColor = Color.LightGreen;
                 clickedButton.Enabled = false; 
-                clickedButton.Text = "OK";
+                clickedButton.Text = "";
             }
         }
     }
