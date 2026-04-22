@@ -21,12 +21,10 @@ namespace galery
 
         private void LoadMemes()
         {
-            // Варіант А: Вказати папку з мемами (створи папку "memes" у bin/Debug)
             string folderPath = Path.Combine(Application.StartupPath, "memes");
 
             if (Directory.Exists(folderPath))
             {
-                // Додаємо файли популярних форматів
                 memePaths.AddRange(Directory.GetFiles(folderPath, "*.jpg"));
                 memePaths.AddRange(Directory.GetFiles(folderPath, "*.png"));
                 memePaths.AddRange(Directory.GetFiles(folderPath, "*.jpeg"));
@@ -43,7 +41,6 @@ namespace galery
         {
             if (memePaths.Count > 0)
             {
-                // Завантажуємо зображення
                 pictureBox1.Image = Image.FromFile(memePaths[currentIndex]);
 
                 // Виводимо номер мему в заголовок (опціонально)
